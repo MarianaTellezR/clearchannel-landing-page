@@ -1,14 +1,11 @@
 .logo-clearchannel {
     width: 18%;
 }
+
 main {
     display: grid;
     grid-template-columns: 65% 35%;
     grid-template-rows: 1fr;
-}
-
-#modelo3d {
-
 }
 
 #menu {
