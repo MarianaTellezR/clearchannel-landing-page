@@ -112,8 +112,8 @@ gltfLoader.load(
 
         donut.position.x = 1.2;
 
-        donut.rotation.x = Math.PI * 0.2
-        donut.rotation.z = Math.PI * 0.08
+        donut.rotation.x = Math.PI * 0.1
+        donut.rotation.z = Math.PI * 0.03
 
         donut.scale.set(radius, radius, radius)
 
@@ -130,11 +130,14 @@ gltfLoader.load(
 /**
  * Light
  */
-const ambientLight = new THREE.AmbientLight(0xffffff, 0.8)
+const ambientLight = new THREE.AmbientLight(0xffffff, 1.5)
 scene.add(ambientLight)
 
-const directionalLight = new THREE.DirectionalLight(0xffffff, 1)
-directionalLight.position.set(1, 2, 0)
+const directionalLight = new THREE.DirectionalLight(0xffffff, 1.1)
+directionalLight.position.set(0, 1, 0)
+
+directionalLight.color.set(0xf0f0f0); // Cambia el color a un tono más claro
+directionalLight.shadow.darkness = 0.4; // Cambia el valor a 0.5 o prueba con diferentes valores
 
 directionalLight.castShadow = true
 scene.add(directionalLight)
