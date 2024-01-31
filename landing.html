@@ -2,92 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page - Clear Channel</title>
-    <!--Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!--Styling Sheet-->
-    <link rel="stylesheet" type="text/css" href="css/landing.css">
-    
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/landing.css">
 </head>
 <body>
-    <head>
-        <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img class="logo-clearchannel" src="img/logo.png"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Servicios</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Casos de éxito</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Noticias</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Términos y Condiciones</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Proveedores</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Línea de Denuncia</a>
-                  </li>
-                </ul>
-              </div>
+    <canvas class="webgl"></canvas>
+    <div class="loading-bar"></div>
+
+    <section class="one">
+        <div class="container">
+            <div class="hero">
+                <h2>Abs are Cool.</h2>
+                <h3>But have you ever tried donuts?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque aliquid culpa, <br>
+                    providentvoluptatem excepturi id in quasi ea hic voluptate dicta amet explicabo <br>
+                    expedita ratione velit modi. Nisiquaerat illum amet quisquam iusto perferendis <br>
+                    ducimus aspernatur quia, repellendus beatae fugiat!</p>
+
             </div>
-          </nav>
-    </head>
-    <main>
-
-      <canvas class="webgl"></canvas>
-
-        <div id="menu">
-            <button onclick="clearChannel()">Clear Channel</button>
-            <a href="#">PRODUCTOS</a>
-            <a href="#">SERVICIOS</a>
-            <a href="#">COBERTURA</a>
-            <a href="#">NOSOTROS</a>
-            <a href="#">CASOS DE ÉXITO</a>
-            <a href="#">CONTACTO</a>
-            <a href="#">NOTICIAS</a>
-            <a href="#">TÉRMINOS Y CONDICIONES</a>
-            <a href="#">AVISO DE PRIVACIDAD</a>
-            <a href="#">CÓDIGO DE CONDUCTA DE PROVEEDORES</a>
-            <a href="#">LÍNEA DE DENUNCIA</a>
-            <a href="#">ESG</a>
         </div>
-        <div id="modelo3D">
-          
+    </section>
+  
+    <section class="two">
+        <div class="container">
+            <div class="hero">
+                <h2>How we do</h2>
+                <h3>Experiment width tasty <br>donuts recipe everytime</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque aliquid culpa, <br>
+                    providentvoluptatem excepturi id in quasi ea hic voluptate dicta amet explicabo <br>
+                    expedita ratione velit modi. Nisiquaerat illum amet quisquam iusto perferendis <br>
+                    ducimus aspernatur quia, repellendus beatae fugiat!</p>
+
+            </div>
         </div>
-    </main>
+    </section>
 
-    <!--THREE JS-->
-    <script src="https://unpkg.com/three@0.146.0/build/three.min.js"></script>
-    <script src="https://unpkg.com/three@0.146.0/examples/js/loaders/GLTFLoader.js"></script>
-
-    <!--GSAP-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <section class="three">
+                <h1>HAPPY DONUT.</h1>
+    </section>
     
-   
-    <!--Landing Javascript-->
-    <script src="javascript/landing.js"></script>
+    <!-- <script src="script.js"></script> -->
 
-     <!--Bootstrap Script JS-->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.146.0/three.min.js"></script>
+    <!-- <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script> -->
+    <script src="https://unpkg.com/three@0.146.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="./javascript/landing.js"></script>
 </body>
 </html>
