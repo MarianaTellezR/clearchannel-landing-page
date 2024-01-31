@@ -13,7 +13,9 @@ html {
 }
 
 body {
-    background: #ffc0cb;
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     position: relative;
     height: 100%;
     overflow: hidden;
@@ -85,6 +87,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
 h2 {
@@ -94,6 +97,7 @@ h2 {
     font-family: inherit;
     display: block;
     width: 100%;
+    color: white;
 }
 
 h3 {
@@ -103,6 +107,7 @@ h3 {
     margin-bottom: 30px;
     display: block;
     width: 100%;
+    color: white;
 }
 
 p {
@@ -111,6 +116,7 @@ p {
     font-weight: 300;
     display: block;
     width: 100%;
+    color: white;
 }
 
 .loading-bar {
