@@ -73,6 +73,10 @@ const tick = () => {
     const deltaTime = elapsedTime - lastElapsedTime
     lastElapsedTime = elapsedTime
 
+    if(!!billboard){
+        billboard.position.y = Math.sin(elapsedTime * 0.5) * 0.1 - 0.1
+    }
+
 
     console.log('tick')
     renderer.render(scene, camera)
