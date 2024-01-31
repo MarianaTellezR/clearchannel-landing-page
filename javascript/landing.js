@@ -108,7 +108,7 @@ gltfLoader.load(
 
         donut = gltf.scene
 
-        const radius = 0.0020
+        const radius = 0.0016
 
         donut.position.x = 1.2;
 
