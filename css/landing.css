@@ -1,10 +1,10 @@
 .logo-clearchannel {
-    width: 18%;
+    width: 15%;
 }
 
 main {
     display: grid;
-    grid-template-columns: 65% 35%;
+    grid-template-columns: 42% 58%;
     grid-template-rows: 1fr;
 }
 
